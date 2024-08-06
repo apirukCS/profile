@@ -1,0 +1,13 @@
+<p-carousel [value]="this.beef" [numVisible]="5" [numScroll]="5" [circular]="false" [responsiveOptions]="responsiveOptions">
+    <ng-template let-product pTemplate="item">
+      <div class="row">
+        <div class="col-lg-12">
+          <div style="padding: 0.5vw;">
+            <img width="100%" class="center" src="../../assets/img/beef/{{product.image}}" class="product-image" />
+          </div>
+        </div>
+      </div>
+  </ng-template>
+</p-carousel>
+
+

@@ -1,0 +1,182 @@
+<div class="main-content">
+  <div class="row" style="padding-left: 4vw; padding-right: 4vw">
+    <div class="col-lg-4 padding-card-works" data-aos="fade-right">
+      <div style="background-color: #1abc9c">
+        <div style="padding: 0.5vw">
+          <p-card
+            header="Fruit Shop"
+            subheader="Fruit shopping application"
+            styleClass="p-card-shadow"
+          >
+            <ng-template pTemplate="header">
+              <div style="padding: 0.5vw">
+                <img
+                  height="300"
+                  src="https://firebasestorage.googleapis.com/v0/b/imagefruitshop.appspot.com/o/profileCustomer%2FlogoFruitShop.png?alt=media&token=fa5dcf4a-4c84-47ee-8687-f3152a513229"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <p>
+              Fruit Shop is a centralized application for fruit trading. System
+              users are divided into 3 groups: customers, merchants, and admins.
+            </p>
+            <!-- <span style="color: #2c3e50;font-size: medium;font-weight: bold;">Front-end</span>
+          <p>Flutter framework , Dart Languages</p>
+          <span style="color: #2c3e50;font-size: medium;font-weight: bold;">Back-end</span>
+          <p>Spring framework , Java Languages , PHP Languages</p>
+          <span style="color: #2c3e50;font-size: medium;font-weight: bold;">Database</span>
+          <p>phpMyAdmin , SQL Languages</p> -->
+            <ng-template pTemplate="footer">
+              <p-button
+                label="See more"
+                [style]="{ 'background-color': '#1abc9c' }"
+                (onClick)="changeStatusFruitShop()"
+              ></p-button>
+              <!-- <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button> -->
+            </ng-template>
+          </p-card>
+        </div>
+      </div>
+    </div>
+
+    <!-- item 2 -->
+    <div class="col-lg-4 padding-card-works" data-aos="fade-up">
+      <div style="background-color: #1abc9c">
+        <div style="padding: 0.5vw">
+          <p-card
+            header="Rise+"
+            subheader="Rise plus shopping application."
+            styleClass="p-card-shadow"
+          >
+            <ng-template pTemplate="header">
+              <div style="padding: 0.5vw">
+                <img
+                  height="300"
+                  width=""
+                  src="https://firebasestorage.googleapis.com/v0/b/imagefruitshop.appspot.com/o/profileCustomer%2Flogo-riseplus.png?alt=media&token=f3529101-38a7-4a38-91a4-52a52515f754"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <p>
+              Rise+ is a general commodities trading application. The data
+              within the application is some simulated data.
+            </p>
+            <ng-template pTemplate="footer">
+              <p-button
+                label="See more"
+                [style]="{ 'background-color': ' #1abc9c' }"
+                (onClick)="changeStatusRise()"
+              ></p-button>
+              <!-- <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button> -->
+            </ng-template>
+          </p-card>
+        </div>
+      </div>
+    </div>
+
+    <!-- item 3 -->
+    <div class="col-lg-4 padding-card-works" data-aos="fade-left">
+      <div style="background-color: #1abc9c">
+        <div style="padding: 0.5vw">
+          <p-card
+            header="Zyan Beef"
+            subheader="Zyan beef application"
+            styleClass="p-card-shadow"
+          >
+            <ng-template pTemplate="header">
+              <div style="padding: 0.5vw">
+                <img
+                  height="300"
+                  src="https://zyanwoa.com/img/beef.png"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <p>
+              Zyan beef application is a service in terms of beef farm
+              management via web applications on mobile phones, tablets.
+            </p>
+            <ng-template pTemplate="footer">
+              <div class="column" style="justify-items: center">
+                <p-button
+                  label="See more"
+                  [style]="{ 'background-color': '#1abc9c' }"
+                  (onClick)="changeStatusBreef()"
+                ></p-button>
+              </div>
+              <!-- <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button> -->
+            </ng-template>
+          </p-card>
+        </div>
+      </div>
+    </div>
+
+    <!-- item 4 -->
+    <div class="col-lg-4 padding-card-works" data-aos="fade-left">
+      <div style="background-color: #1abc9c">
+        <div style="padding: 0.5vw">
+          <p-card
+            header="KKVS"
+            subheader="KKVS Application"
+            styleClass="p-card-shadow"
+          >
+            <ng-template pTemplate="header">
+              <div style="padding: 0.5vw">
+                <img
+                  height="300"
+                  src="https://kkvs-dev.dev.riseplus.tech/assets/images/logo/favicon.png"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <p>
+              Zyan beef application is a service in terms of beef farm
+              management via web applications on mobile phones, tablets.
+            </p>
+            <ng-template pTemplate="footer">
+              <div class="column" style="justify-items: center">
+                <p-button
+                  label="See more"
+                  [style]="{ 'background-color': '#1abc9c' }"
+                  (onClick)="changeStatusBreef()"
+                ></p-button>
+              </div>
+              <!-- <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button> -->
+            </ng-template>
+          </p-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIALOG -->
+
+  <p-dialog
+    position="center"
+    header="Rise+(Cooperative Education Project)"
+    [(visible)]="isShowDialogRise"
+    [style]="{ 'padding-left': '4vw', 'padding-right': '4vw' }"
+  >
+    <app-dialog-rise></app-dialog-rise>
+  </p-dialog>
+
+  <p-dialog
+    position="center"
+    header="Fruits Shop(Graduation project)"
+    [style]="{ 'padding-left': '4vw', 'padding-right': '4vw' }"
+    [(visible)]="isShowDialogFruitShop"
+  >
+    <app-dialog-fruitshop></app-dialog-fruitshop>
+  </p-dialog>
+
+  <p-dialog
+    position="center"
+    header="Zyan beef(Part-time Project)"
+    [(visible)]="isShowDialogBreef"
+    [style]="{ 'padding-left': '4vw', 'padding-right': '4vw' }"
+  >
+    <app-dialog-breef></app-dialog-breef>
+  </p-dialog>
+</div>

@@ -1,0 +1,21 @@
+<p-carousel [value]="this.products" [numVisible]="5" [numScroll]="5" [circular]="false" [responsiveOptions]="responsiveOptions">
+    <ng-template let-product pTemplate="item">
+      <div class="row">
+        <div class="col-lg-12">
+          <div style="padding: 0.5vw;">
+            <img width="100%" class="center" src="../../assets/img/fruit/{{product.image}}" class="product-image" />
+          </div>
+        </div>
+      </div>
+  </ng-template>
+</p-carousel>
+
+<br>
+<div class="col-lg-12">
+  <h6><i class="pi pi-tags"></i>&nbsp; documentation</h6>
+  <a class="base-padding-left" href="https://drive.google.com/file/d/1SsgBwYt3jxAwYfFi5zQ-HwkVoUuHWW-r/view?usp=sharing" target="_blank">FruitShoppingCenter_Documentation</a>
+</div>
+
+
+
+
